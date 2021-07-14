@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
+import Steps from "./components/Steps";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -12,7 +14,9 @@ import SignIn from "./pages/Sign-in";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/*<Navbar />*/}
+      <Nav />
+      <Steps />
       <div className="container mt-2" style={{ marginTop: 40 }}>
         <Switch>
           <Route exact path="/">
