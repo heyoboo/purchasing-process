@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Nav from "./components/Nav";
 import Steps from "./components/Steps";
+import Container from "./components/Container";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -14,10 +15,10 @@ import SignIn from "./pages/Sign-in";
 function App() {
   return (
     <BrowserRouter>
-      {/*<Navbar />*/}
-      <Nav />
+      <Navbar />
+      {/* <Nav /> */}
       <Steps />
-      <div className="container mt-2" style={{ marginTop: 40 }}>
+      <Container>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -32,7 +33,8 @@ function App() {
             <Profile />
           </Route>
         </Switch>
-      </div>
+      </Container>
+      
     </BrowserRouter>
   );
 }

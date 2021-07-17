@@ -11,47 +11,6 @@ const Help = ({ history }) => {
       <p>
         This is page. This is page. This is page. This is page. This is page.
       </p>
-
-      <div>
-          <a>
-            <button ClassName="button">
-              <NavLink
-                to="/"
-                exact
-              >
-                Back
-              </NavLink>
-            </button>
-          </a>
-          <a>
-            <button ClassName="button">
-              <NavLink
-                to="/SignIn/Hm"
-                exact
-              >
-                Pay
-              </NavLink>
-            </button>
-          </a>
-      </div>
-
-
-      {/* <div className="navbar-item">
-        <div className="buttons">
-          {!isAuth ? (
-            <button className="button is-white" onClick={loginUser}>
-              Log in
-            </button>
-          ) : (
-            <button className="button is-black" onClick={logoutUser}>
-              Log out
-            </button>
-          )}
-        </div>
-      </div> */}
-
-
-
     </div>
   );
 };

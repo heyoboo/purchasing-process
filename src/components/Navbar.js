@@ -17,70 +17,92 @@ const Navbar = ({ history }) => {
   };
 
   return (
-    <nav
-      className="navbar is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div className="container">
-        <div className="navbar-brand">
-          <a
-            role="button"
-            className={`navbar-burger burger ${isOpen && "is-active"}`}
-            aria-label="menu"
-            aria-expanded="false"
-            onClick={() => setOpen(!isOpen)}
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+  <nav>
+    <ul>
+      <li>
+        <a href="">
+          <span  className="question"></span>
+          <span>HELP</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span  className="sign-in"></span>
+          <span>SIGN IN</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span  className="flag"></span>
+          <span  className="lang">EN</span>
+          <span  className="arrow-down"></span>
+        </a>
+      </li>
+      <li  className="choose-lang shadow">
+        <a href="">
+          <span>EN</span>
+          <span  className="arrow-down"></span>
           </a>
-        </div>
+        <a href="">
+          <span>CN</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+    
 
-        <div className={`navbar-menu ${isOpen && "is-active"}`}>
-          <div className="navbar-end">
-            <NavLink
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/"
-              exact
-            >
-              Home
-            </NavLink>
 
-            <NavLink
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/Help"
-            >
-              HELP
-            </NavLink>
+    // <nav
+    //   className="navbar is-primary"
+    //   role="navigation"
+    //   aria-label="main navigation"
+    // >
+    //   <div className="container">
+    //     <div className="navbar-brand">
+    //       <a
+    //         role="button"
+    //         className={`navbar-burger burger ${isOpen && "is-active"}`}
+    //         aria-label="menu"
+    //         aria-expanded="false"
+    //         onClick={() => setOpen(!isOpen)}
+    //       >
+    //         <span aria-hidden="true"></span>
+    //         <span aria-hidden="true"></span>
+    //         <span aria-hidden="true"></span>
+    //       </a>
+    //     </div>
 
-            <NavLink
-              className="navbar-item"
-              activeClassName="is-active"
-              to="/SignIn/Im-Not-A-User"
-            >
-              SIGN IN
-            </NavLink>
+    //     <div className={`navbar-menu ${isOpen && "is-active"}`}>
+    //       <div className="navbar-end">
+    //         <NavLink
+    //           className="navbar-item"
+    //           activeClassName="is-active"
+    //           to="/"
+    //           exact
+    //         >
+    //           Home
+    //         </NavLink>
 
-            <div className="navbar-item">
-              <div className="buttons">
-                {!isAuth ? (
-                  <button className="button is-white" onClick={loginUser}>
-                    Log in
-                  </button>
-                ) : (
-                  <button className="button is-black" onClick={logoutUser}>
-                    Log out
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+    //         <NavLink
+    //           className="navbar-item"
+    //           activeClassName="is-active"
+    //           to="/Help"
+    //         >
+    //           HELP
+    //         </NavLink>
+
+    //         <NavLink
+    //           className="navbar-item"
+    //           activeClassName="is-active"
+    //           to="/SignIn/Im-Not-A-User"
+    //         >
+    //           SIGN IN
+    //         </NavLink>
+
+    //       </div>
+    //     </div>
+    //   </div>
+    // </nav>
   );
 };
 
