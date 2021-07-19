@@ -8,20 +8,39 @@
 
 ## Paths
 ### Usage
-- Routing
-[/ src / App.js](https://github.com/heyoboo/purchasing-process/blob/main/src/App.js)
-- Rendering
-[/ src / index.js](https://github.com/heyoboo/purchasing-process/blob/main/src/index.js)
-- Rendered Result
-[/ public / index.html](https://github.com/heyoboo/purchasing-process/blob/main/public/index.html)
+***Routing***
+<br>
+
+> [/ src / App.js](https://github.com/heyoboo/purchasing-process/blob/main/src/App.js)
+
+***Rendering***
+<br>
+
+> [/ src / index.js](https://github.com/heyoboo/purchasing-process/blob/main/src/index.js)
+
+***Rendered Result***
+<br>
+
+> [/ public / index.html](https://github.com/heyoboo/purchasing-process/blob/main/public/index.html)
 
 ### Materials
-- Images
-[/ public / img /](https://github.com/heyoboo/purchasing-process/tree/main/public/img)
-- Stylesheets
-[/ public / scss /](https://github.com/heyoboo/purchasing-process/tree/main/public/scss)
-- Step Pages
-[/ src / pages /](https://github.com/heyoboo/purchasing-process/tree/main/src/pages)
-- Components (for mounting)
-[/ src / components /](https://github.com/heyoboo/purchasing-process/tree/main/src/components)
+***Images***
+<br>
+
+> [/ public / img /](https://github.com/heyoboo/purchasing-process/tree/main/public/img)
+
+***Stylesheets***
+<br>
+
+> [/ public / scss /](https://github.com/heyoboo/purchasing-process/tree/main/public/scss)
+
+***Step Pages***
+<br>
+
+> [/ src / pages /](https://github.com/heyoboo/purchasing-process/tree/main/src/pages)
+
+***Components (for mounting)***
+<br>
+
+> [/ src / components /](https://github.com/heyoboo/purchasing-process/tree/main/src/components)
 
