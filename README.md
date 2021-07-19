@@ -7,14 +7,21 @@
 <br>
 
 ## Paths
-### Routing
+### Usage
+- Routing
 [/ src / App.js](https://github.com/heyoboo/purchasing-process/blob/main/src/App.js)
-### Images
+- Rendering
+[/ src / index.js](https://github.com/heyoboo/purchasing-process/blob/main/src/index.js)
+- Rendered Result
+[/ public / index.html](https://github.com/heyoboo/purchasing-process/blob/main/public/index.html)
+
+### Materials
+- Images
 [/ public / img /](https://github.com/heyoboo/purchasing-process/tree/main/public/img)
-### Stylesheets
+- Stylesheets
 [/ public / scss /](https://github.com/heyoboo/purchasing-process/tree/main/public/scss)
-### Step Pages
+- Step Pages
 [/ src / pages /](https://github.com/heyoboo/purchasing-process/tree/main/src/pages)
-### Components (for mounting)
+- Components (for mounting)
 [/ src / components /](https://github.com/heyoboo/purchasing-process/tree/main/src/components)
 
