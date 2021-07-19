@@ -1,0 +1,30 @@
+/* STEPS */
+.step-2 {
+  background: #58d642;
+  border: 1px solid #29611f;
+}
+/* STEPS */
+
+
+/* CONTENT */
+.container {
+  padding: 0 20px 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  max-width: 900px;
+  min-height: calc(100vh - 310px);
+  margin: auto;
+  padding: 0 20px;
+}
+
+.content-inner {
+  max-width: 650px;
+}
+/* CONTENT */

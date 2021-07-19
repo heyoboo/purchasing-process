@@ -1,0 +1,142 @@
+/* STEPS */
+.step-container {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  height: 100px;
+  margin: 0 auto 20px;
+}
+
+.step {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+.step-circle {
+  display: block;
+  background: #1ba1e2;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #006eaf;
+  border-radius: 100%;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.step-txt {
+  padding-top: 10px;
+}
+
+hr {
+  transform: translateY(-10px);
+  width: calc(100% - 200px);
+  border: none;
+  border-top: 2px dashed grey;
+}
+/* STEPS */
+
+/* CONTENT */
+.container {
+  padding: 0 20px 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  max-width: 842px;
+  min-height: calc(100vh - 310px);
+  margin: auto;
+  padding: 0 20px;
+}
+
+.content-inner {
+  max-width: 400px;
+  padding: 40px 0;
+}
+
+h1,
+p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+label,
+input {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #4c9aff;
+  border-radius: 5px;
+}
+
+.require {
+  color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  float: right;
+  color: white;
+  background: #1ba1e2;
+  border: 1.5px solid #006eaf;
+  border-radius: 5px;
+  width: 180px;
+  height: 40px;
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background: #1292d3;
+  }
+  
+  &:hover .arrow-right {
+    transform: translateX(60px);
+  }
+
+  &:active {
+    background: #2fa1da;
+    transform: scale(1.05);
+  }
+
+  &:active .arrow-right {
+    transform: translateX(60px);
+  }
+}
+
+.arrow-right {
+  background: url(../img/arrow-right.svg) no-repeat;
+  position: absolute;
+  transform: translateX(50px);
+  width: 20px;
+  height: 15px;
+  transition: 0.2s;
+}
+/* CONTENT */
+
+@media screen and (max-width: 550px) {
+  .step-container {
+    padding: 0 30px;
+  }
+
+  .content {
+    min-height: calc(100vh - 240px);
+  }
+}

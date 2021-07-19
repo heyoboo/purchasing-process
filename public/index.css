@@ -26,6 +26,7 @@ ul {
 }
 
 a {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +60,7 @@ span {
 }
 
 .question {
-  background: url(./question.svg) no-repeat;
+  background: url(./css) no-repeat;
 }
 
 .sign-in {
@@ -78,8 +79,9 @@ span {
 }
 
 .choose-lang {
+  display: none;
   position: absolute;
-  width: 130px;
+  width: 140px;
   background: white;
 }
 
@@ -89,6 +91,10 @@ span {
 
 .choose-lang > a:hover {
   background: lightgrey;
+}
+
+.visible {
+  display: block;
 }
 
 .arrow-down {
@@ -183,29 +189,42 @@ input {
   margin-bottom: 20px;
   padding: 10px;
   border: 2px solid #4c9aff;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .require {
   color: red;
 }
 
-button {
+.button {
   display: flex;
   justify-content: center;
   float: right;
   color: white;
   background: #1ba1e2;
-  padding: 10px;
   border: 1.5px solid #006eaf;
-  border-radius: 2px;
+  border-radius: 5px;
   width: 180px;
-  transition: 0.2s;
+  height: 40px;
+  transition: .2s;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;
   background: #1292d3;
+}
+
+.button:hover .arrow-right {
+  transform: translateX(60px);
+}
+
+.button:active  {
+  background: #2fa1da;
+  transform: scale(1.05);
+}
+
+.button:active .arrow-right {
+  transform: translateX(60px);
 }
 
 .arrow-right {
@@ -214,6 +233,7 @@ button:hover {
   transform: translateX(50px);
   width: 20px;
   height: 15px;
+  transition: .2s;
 }
 /* CONTENT */
 
@@ -234,6 +254,18 @@ button:hover {
     span {
         width: 100%;
         text-align: center;
+    }
+
+    li:nth-child(3) > a {
+      justify-content: center;
+    }
+
+    li:nth-child(3) > a > span:nth-child(2) {
+      width: auto;
+    }
+
+    li:nth-child(4) {
+      width: 33%;
     }
 
     ul > li:first-child > a > span,

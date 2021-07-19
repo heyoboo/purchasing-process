@@ -1,0 +1,148 @@
+/* NAV */
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 30px;
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-radius: 2px;
+  color: black;
+  height: 60px;
+  padding: 0 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+a:hover {
+  background: white;
+}
+
+span {
+  text-align: center;
+}
+
+.question,
+.sign-in {
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.question,
+.sign-in,
+.flag {
+  margin-right: 20px;
+}
+
+.question {
+  background: url(../img/question.svg) no-repeat;
+}
+
+.sign-in {
+  background: url(../img/sign-in.svg) no-repeat;
+}
+
+.flag {
+  background: url(../img/flag.svg) no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.lang {
+  margin-right: 10px;
+}
+
+.choose-lang {
+  display: none;
+  position: absolute;
+  width: 140px;
+  background: white;
+}
+
+.choose-lang > a {
+  border-radius: initial;
+}
+
+.choose-lang > a:hover {
+  background: lightgrey;
+}
+
+.visible {
+  display: block;
+}
+
+.arrow-down {
+  background: url(../img/arrow-down.svg) no-repeat;
+  width: 20px;
+  height: 15px;
+}
+
+/* width 550 */
+@media screen and (max-width: 550px) {
+  ul {
+    padding: 0 0 20px;
+  }
+  li {
+    width: 33%;
+  }
+  a {
+    padding: 10px 0;
+  }
+  span {
+    width: 100%;
+    text-align: center;
+  }
+  li:nth-child(3) > a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  li:nth-child(3) > a > span:nth-child(2) {
+    width: auto;
+  }
+  li:nth-child(4) {
+    width: 33%;
+  }
+  ul > li:first-child > a > span,
+  ul > li:nth-child(2) > a > span {
+    border-right: 1px solid lightgrey;
+  }
+  .question,
+  .sign-in,
+  .flag {
+    display: none;
+  }
+  .choose-lang {
+    right: 0;
+  }
+  .choose-lang > a {
+    padding: 0 20px;
+  }
+  .choose-lang > a > span:first-child {
+    width: calc(100% - 20px);
+  }
+}
+
+/* NAV */
+/*# sourceMappingURL=nav.css.map */
