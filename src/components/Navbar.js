@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 
-const Navbar = ({ history }) => {
-  const [isOpen, setOpen] = useState(false);
+const Navbar = () => {
 
-  const isAuth = !!localStorage.getItem("token");
+  const showLang = () => {
+    var lang = document.querySelector("#lang");
+    lang.classList.add("visible");
+  }
 
-  const loginUser = () => {
-    localStorage.setItem("token", "some-login-token");
-    history.push("/profile/Am-I-A-User");
-  };
-
-  const logoutUser = () => {
-    localStorage.removeItem("token");
-    history.push("/");
-  };
+  const closeLang = () => {
+    var lang = document.querySelector("#lang");
+    lang.classList.remove("visible");
+  }
 
   return (
   <nav>
@@ -32,13 +29,13 @@ const Navbar = ({ history }) => {
         </a>
       </li>
       <li>
-        <a href="">
+        <a onMouseDown={showLang}>
           <span  className="flag"></span>
           <span  className="lang">EN</span>
           <span  className="arrow-down"></span>
         </a>
       </li>
-      <li  className="choose-lang shadow">
+      <li id="lang" className="choose-lang shadow" onMouseLeave={closeLang}>
         <a href="">
           <span>EN</span>
           <span  className="arrow-down"></span>
@@ -49,60 +46,6 @@ const Navbar = ({ history }) => {
       </li>
     </ul>
   </nav>
-    
-
-
-    // <nav
-    //   className="navbar is-primary"
-    //   role="navigation"
-    //   aria-label="main navigation"
-    // >
-    //   <div className="container">
-    //     <div className="navbar-brand">
-    //       <a
-    //         role="button"
-    //         className={`navbar-burger burger ${isOpen && "is-active"}`}
-    //         aria-label="menu"
-    //         aria-expanded="false"
-    //         onClick={() => setOpen(!isOpen)}
-    //       >
-    //         <span aria-hidden="true"></span>
-    //         <span aria-hidden="true"></span>
-    //         <span aria-hidden="true"></span>
-    //       </a>
-    //     </div>
-
-    //     <div className={`navbar-menu ${isOpen && "is-active"}`}>
-    //       <div className="navbar-end">
-    //         <NavLink
-    //           className="navbar-item"
-    //           activeClassName="is-active"
-    //           to="/"
-    //           exact
-    //         >
-    //           Home
-    //         </NavLink>
-
-    //         <NavLink
-    //           className="navbar-item"
-    //           activeClassName="is-active"
-    //           to="/Help"
-    //         >
-    //           HELP
-    //         </NavLink>
-
-    //         <NavLink
-    //           className="navbar-item"
-    //           activeClassName="is-active"
-    //           to="/SignIn/Im-Not-A-User"
-    //         >
-    //           SIGN IN
-    //         </NavLink>
-
-    //       </div>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 };
 
