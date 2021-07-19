@@ -17,7 +17,8 @@ function App() {
       {/* <Steps /> */}
       <Container>
         <Switch>
-          {/* <Redirect from="/" to="/step-1-my-data" /> */}
+          <Redirect exact from="/" to="step-1-my-data" />
+
           <Route path="/step-1-my-data">
             <StepOne />
           </Route>
