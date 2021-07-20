@@ -1,6 +1,8 @@
 ## Usage
 ### Fecth packages
 `yarn install`
+<br><br>
+`yarn add react-router-dom`
 ### Start the project
 `yarn start`
 
