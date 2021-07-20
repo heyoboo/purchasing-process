@@ -13,7 +13,7 @@
 
 > [/ src / App.js](https://github.com/heyoboo/purchasing-process/blob/main/src/App.js)
 
-***Fetching Data***
+***Fetch API***
 <br>
 
 > [/ src / pages / Step-three.js](https://github.com/heyoboo/purchasing-process/blob/V2/src/pages/Step-three.js)
