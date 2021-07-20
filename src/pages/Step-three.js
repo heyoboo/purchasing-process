@@ -1,7 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
+var orderTitle, message;
+
+fetch('https://run.mocky.io/v3/5fd5b0a0-7cec-4ccf-bdec-b9c99c78e29f')
+      .then(response => {
+         return response.json();
+      })
+      .then(data => {
+        orderTitle = JSON.stringify(data.title.en);
+        message = JSON.stringify(data.message.en);
+  })
+
+
+
 const StepThree = () => (
+
 
   <>
   
@@ -19,17 +34,20 @@ const StepThree = () => (
 
   <div className="content shadow">
     <div className="content-inner">
-      <h1 className="order-mb">Order Created</h1>
+      <h1 className="order-mb">{orderTitle.replace(/['"]+/g, '')}</h1>
         <div className= "card-container">
           <img src="./img/order.svg" className="card"/>
         </div>
-      <p>Congratulations, your payment was successful.
-Shortly a conrmation email will arrive to your inbox</p>
+      <p>{message.replace(/['"]+/g, '')}</p>
     </div>
   </div>
 
   </>
 
+
+
 );
+
+
 
 export default StepThree;
