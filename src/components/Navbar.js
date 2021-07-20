@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink, withRouter } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -54,4 +53,4 @@ const Navbar = () => {
   );
 };
 
-export default withRouter(Navbar);
+export default Navbar;
