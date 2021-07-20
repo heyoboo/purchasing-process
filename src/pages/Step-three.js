@@ -19,8 +19,11 @@ const StepThree = () => (
 
   <div className="content shadow">
     <div className="content-inner">
-      <h1 className="mb-20">Order Created</h1>
-      <p className="mb-20">Congratulations, your payment was successful.
+      <h1 className="order-mb">Order Created</h1>
+        <div className= "card-container">
+          <img src="./img/order.svg" className="card"/>
+        </div>
+      <p>Congratulations, your payment was successful.
 Shortly a conrmation email will arrive to your inbox</p>
     </div>
   </div>
