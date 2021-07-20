@@ -57,12 +57,13 @@
 }
 
 .card {
-  width: 30%;
+  cursor: pointer;
+  width: 20%;
   height: auto;
 }
 
 .card-mr {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .payment-info > p {
