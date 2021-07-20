@@ -33,6 +33,43 @@
   max-width: 650px;
 }
 
+.content-info {
+  margin-bottom: 15px;
+}
+
+.payment-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid grey;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-container:first-child {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 30%;
+  height: auto;
+}
+
+.card-mr {
+  margin-right: 10px;
+}
+
+.payment-info > p {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .step-2-button {
   display: -webkit-box;
   display: -ms-flexbox;
