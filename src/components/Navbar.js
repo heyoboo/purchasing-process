@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 
+
 const Navbar = () => {
+  
+  
+  var page = document.querySelector("#root");
 
   const showLang = () => {
     var lang = document.querySelector("#lang");
     lang.classList.add("visible");
-  }
-
-  const closeLang = () => {
+  }  
+  
+  page.addEventListener("click", () => {
     var lang = document.querySelector("#lang");
     lang.classList.remove("visible");
-  }
+  })
+
 
   return (
   <nav>
@@ -29,13 +34,13 @@ const Navbar = () => {
         </a>
       </li>
       <li>
-        <a onMouseDown={showLang}>
+        <a onClick={showLang}>
           <span  className="flag"></span>
           <span  className="lang">EN</span>
           <span  className="arrow-down"></span>
         </a>
       </li>
-      <li id="lang" className="choose-lang shadow" onMouseLeave={closeLang}>
+      <li id="lang" className="choose-lang shadow">
         <a href="">
           <span>EN</span>
           <span  className="arrow-down"></span>
