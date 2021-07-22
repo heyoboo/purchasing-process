@@ -19,8 +19,8 @@ const StepTwo = () => (
 
   <div className="content shadow">
     <div className="content-inner">
-      <h1 className="mb-20">Payemnt</h1>
-      <p className="content-info">After making the payment you will receive a conrmation email with details of your purchase
+      <h1 className="mb-20">Payment</h1>
+      <p className="content-info">After making the payment you will receive a confirmation email with details of your purchase
 </p>
 
       <div className="payment-info">
