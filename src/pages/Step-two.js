@@ -1,20 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./step-two.scss"
 
 const StepTwo = () => (
   <>
-    <div className="step-container">
-      <div className="step">
-        <span className="step-circle step-1">1</span>
-        <span className="step-txt">My data</span>
-      </div>
-      <hr />
-      <div className="step">
-        <span className="step-circle">2</span>
-        <span className="step-txt">Payment</span>
-      </div>
-    </div>
-
     <div className="content shadow">
       <div className="content-inner">
         <h1 className="mb-20">Payemnt</h1>
@@ -32,11 +21,11 @@ const StepTwo = () => (
           <div className="visa-card"></div>
         </div>
         <form>
-          <NavLink className="step-2-button button-left shadow" to="/step-1-my-data" exact>
+          <NavLink className="step-2-button button-left shadow" to="/my-data" exact>
             <span>Back</span>
             <span className="arrow-left"></span>
           </NavLink>
-          <NavLink className="step-2-button shadow" to="/step-3-order-confirmation" exact>
+          <NavLink className="step-2-button shadow" to="/confirmation" exact>
             <span>Pay</span>
             <span className="step-2-arrow-right"></span>
           </NavLink>

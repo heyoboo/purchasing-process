@@ -1,52 +1,51 @@
-import React, { useState } from "react";
-
+import React from "react";
+import "./nav.scss"
 
 const Navbar = () => {
+  let page = document.querySelector("#root");
 
-
-  var page = document.querySelector("#root");
+  page.addEventListener("click", () => {
+    let lang = document.querySelector("#lang");
+    lang.classList.remove("visible");
+  })
 
   const showLang = () => {
-    var lang = document.querySelector("#lang");
+    let lang = document.querySelector("#lang");
     lang.classList.add("visible");
   }
 
-  page.addEventListener("click", () => {
-    var lang = document.querySelector("#lang");
-    lang.classList.remove("visible");
-  })
 
 
   return (
     <nav>
       <ul>
         <li>
-          <a href="">
+          <button>
             <span className="question"></span>
             <span>HELP</span>
-          </a>
+          </button>
         </li>
         <li>
-          <a href="">
+          <button>
             <span className="sign-in"></span>
             <span>SIGN IN</span>
-          </a>
+          </button>
         </li>
         <li>
-          <a onClick={showLang}>
+          <button onClick={showLang}>
             <span className="flag"></span>
             <span className="lang">EN</span>
             <span className="arrow-down"></span>
-          </a>
+          </button>
         </li>
         <li id="lang" className="choose-lang shadow">
-          <a href="">
+          <button>
             <span>EN</span>
             <span className="arrow-down"></span>
-          </a>
-          <a href="">
+          </button>
+          <button>
             <span>CN</span>
-          </a>
+          </button>
         </li>
       </ul>
     </nav>

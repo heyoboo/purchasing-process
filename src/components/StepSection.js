@@ -1,6 +1,7 @@
 import React from "react";
+import "./steps.scss"
 
-const Steps = () => {
+const StepSection = () => {
   return (
     <div className="step-container">
       <div className="step">
@@ -16,4 +17,4 @@ const Steps = () => {
   );
 };
 
-export default Steps;
+export default StepSection;

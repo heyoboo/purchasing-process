@@ -1,19 +1,8 @@
 import React from "react";
+import "./step-three.scss"
 
 const StepThree = () => (
   <>
-    <div className="step-container">
-      <div className="step">
-        <span className="step-circle step-1">1</span>
-        <span className="step-txt">My data</span>
-      </div>
-      <hr />
-      <div className="step">
-        <span className="step-circle step-1">2</span>
-        <span className="step-txt">Payment</span>
-      </div>
-    </div>
-
     <div className="content shadow">
       <div className="content-inner">
         <h1 className="mb-20">Order Created</h1>
