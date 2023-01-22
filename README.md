@@ -1,8 +1,6 @@
 ## Usage
 ### Fecth packages
 `yarn install`
-<br><br>
-`yarn add react-router-dom`
 ### Start the project
 `yarn start`
 
@@ -14,27 +12,6 @@
 <br>
 
 > [/ src / App.js](https://github.com/heyoboo/purchasing-process/blob/main/src/App.js)
-
-***Rendering***
-<br>
-
-> [/ src / index.js](https://github.com/heyoboo/purchasing-process/blob/main/src/index.js)
-
-***Rendered Result***
-<br>
-
-> [/ public / index.html](https://github.com/heyoboo/purchasing-process/blob/main/public/index.html)
-
-### Materials
-***Images***
-<br>
-
-> [/ public / img /](https://github.com/heyoboo/purchasing-process/tree/main/public/img)
-
-***Stylesheets***
-<br>
-
-> [/ public / scss /](https://github.com/heyoboo/purchasing-process/tree/main/public/scss)
 
 ***Step Pages***
 <br>
